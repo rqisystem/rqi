@@ -1,8 +1,5 @@
 import generalInfo from '../data/general';
-import socialMedias from '../data/socialMedias';
-import wpLogo from '../assets/wp-logo.png';
-import eLogo from '../assets/email-logo.png';
-import telegramLogo from '../assets/telegram-logo.webp';
+import contacts from '../data/contacts';
 
 const General = () => {
   return (
@@ -19,46 +16,23 @@ const General = () => {
           <div className="mt-6 flex flex-col flex-wrap gap-2 justify-center">
             <h5 className="text-md font-bold text-center">Əlaqə</h5>
             <div className="flex item justify-center space-x-2">
-              <a
-                href={`mailto:${generalInfo?.secondary?.email?.title}`}
-                className="w-7 h-7"
-                style={{
-                  backgroundImage: `url(${eLogo})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}></a>
-              <a
-                href={`https://wa.me/${generalInfo?.contacts?.whatsApp?.title.replace(/\D/g, '')}`}
-                className="w-7 h-7"
-                style={{
-                  backgroundImage: `url(${wpLogo})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}></a>
-              <a
-                href={`tg://resolve?domain=${generalInfo?.contacts?.telegram?.title}`}
-                className="w-7 h-7"
-                style={{
-                  backgroundImage: `url(${telegramLogo})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}></a>
-
-              {socialMedias?.map((social, index) => (
-                <a
-                  key={index}
-                  href={social?.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    backgroundImage: `url(${social.icon})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                  className="w-7 h-7">
-                  {/* <span>{social.name}</span> */}
-                </a>
-              ))}
+              {contacts?.map((social, index) => {
+                if (social?.visible) {
+                  return (
+                    <a
+                      key={index}
+                      href={social?.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        backgroundImage: `url(${social.icon})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
+                      className="w-7 h-7"></a>
+                  );
+                }
+              })}
             </div>
           </div>
         </div>
