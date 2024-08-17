@@ -1,31 +1,29 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from 'react-router-dom';
-import Layout from './components/Layout';
-import { Home } from './pages/Home';
-import General from './pages/General';
-import Certifacates from './pages/Certifacates';
-import Skills from './pages/Skills';
-import Experiences from './pages/Experiences';
-import Header from './components/Header';
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} />
-      <Route path="general" element={<General />} />
-      <Route path="certificates" element={<Certifacates />} />
-      <Route path="skills" element={<Skills />} />
-      <Route path="experiences" element={<Experiences />} />
-    </Route>,
-  ),
-);
+import Certificates from './components/Certificates';
+import Educations from './components/Educations';
+import Experiences from './components/Experiences';
+import General from './components/General';
+import Skills from './components/Skills';
+import SocialMedia from './components/SocialMedia';
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="bg-gray-100 w-full min-h-[100vh]">
+      <div className="container mx-auto py-8">
+        <div className="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
+          <General />
+          <div className="col-span-4 sm:col-span-9">
+            <div className="bg-white shadow rounded-lg p-6">
+              <Educations />
+              <Experiences />
+              <Certificates />
+              <Skills />
+              <SocialMedia />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default App;
