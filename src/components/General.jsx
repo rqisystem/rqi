@@ -35,7 +35,7 @@ const General = () => {
                   backgroundPosition: 'center',
                 }}></a>
               <a
-                href="https://t.me/@rqi"
+                href="tg://resolve?domain=@rqi"
                 className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${telegramLogo})`,
