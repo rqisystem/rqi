@@ -11,12 +11,7 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 
 const generalInfo = {
   main: { name: 'Rüstəmli Qüdrət İbrahim', position: 'Mühasib' },
-
-  secondary: {
-    // birthDate: {
-    //   title: '18.12.1990',
-    //   icon: FaBirthdayCake,
-    // },
+  contacts: {
     phone: {
       title: '+994-55-522-22-31',
       icon: FaPhone,
@@ -29,6 +24,13 @@ const generalInfo = {
       title: '@rqi',
       icon: SiTelegram,
     },
+  },
+
+  secondary: {
+    // birthDate: {
+    //   title: '18.12.1990',
+    //   icon: FaBirthdayCake,
+    // },
     email: {
       title: 'qudret.rustem@mail.ru',
       icon: FaEnvelope,

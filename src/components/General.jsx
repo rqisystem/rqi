@@ -27,7 +27,7 @@ const General = () => {
                   backgroundPosition: 'center',
                 }}></a>
               <a
-                href={`https://wa.me/${generalInfo?.secondary?.phone?.title.replace(/\D/g, '')}`}
+                href={`https://wa.me/${generalInfo?.contacts?.whatsApp?.title.replace(/\D/g, '')}`}
                 className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${wpLogo})`,
@@ -35,7 +35,10 @@ const General = () => {
                   backgroundPosition: 'center',
                 }}></a>
               <a
-                href="tg://resolve?domain=rqi"
+                href={`tg://resolve?domain=${generalInfo?.contacts?.telegram?.title.replace(
+                  '@',
+                  '',
+                )}`}
                 className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${telegramLogo})`,
