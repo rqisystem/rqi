@@ -1,5 +1,4 @@
 import {
-  FaEnvelope,
   FaMapMarkerAlt,
   // FaBirthdayCake,
   FaUserShield,
@@ -14,10 +13,7 @@ const generalInfo = {
     //   title: '18.12.1990',
     //   icon: FaBirthdayCake,
     // },
-    email: {
-      title: 'qudret.rustem@mail.ru',
-      icon: FaEnvelope,
-    },
+
     address: {
       title: 'Bakı şəhəri Xətai rayonu',
       icon: FaMapMarkerAlt,

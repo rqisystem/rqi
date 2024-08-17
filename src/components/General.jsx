@@ -6,16 +6,19 @@ const General = () => {
     <div className="col-span-4 sm:col-span-3">
       <div className="bg-white shadow rounded-lg p-6">
         <div className="flex flex-col items-center">
-          <img
-            src="/logo.png"
-            className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
-            alt="Profile"
-          />
-          <h1 className="text-xl font-bold">{generalInfo?.main?.name}</h1>
-          <p className="text-gray-700">{generalInfo?.main?.position}</p>
-          <div className="mt-6 flex flex-col flex-wrap gap-2 justify-center">
-            <h5 className="text-md font-bold text-center">Əlaqə</h5>
-            <div className="flex item justify-center space-x-2">
+          <div className="flex flex-col items-center justify-center shadow-soft-lg p-3 rounded-md w-full">
+            <img
+              src="/logo.png"
+              className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
+              alt="Profile"
+            />
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="text-xl font-bold">{generalInfo?.main?.name}</h1>
+              <p className="text-gray-700">{generalInfo?.main?.position}</p>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-col flex-wrap justify-center w-full my-4">
+            <div className="flex item justify-center space-x-3 shadow-soft-lg p-3 rounded-md">
               {contacts?.map((social, index) => {
                 if (social?.visible) {
                   return (
@@ -29,15 +32,14 @@ const General = () => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                       }}
-                      className="w-7 h-7"></a>
+                      className="w-7 h-7 transition-transform transform hover:-translate-y-2"></a>
                   );
                 }
               })}
             </div>
           </div>
         </div>
-        <hr className="my-6 border-t border-gray-300" />
-        <div className="flex flex-col">
+        <div className="flex flex-col shadow-soft-lg p-3 rounded-md">
           <span className="text-gray-700 uppercase font-bold tracking-wider mb-2">
             Ümumi Məlumatlar
           </span>
@@ -50,7 +52,6 @@ const General = () => {
             ))}
           </ul>
         </div>
-        <hr className="my-6 border-t border-gray-300" />
       </div>
     </div>
   );
