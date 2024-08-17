@@ -1,6 +1,7 @@
 import generalInfo from '../data/general';
 import wpLogo from '../assets/wp-logo.png';
 import eLogo from '../assets/email-logo.png';
+import telegramLogo from '../assets/telegram-logo.webp';
 
 const General = () => {
   return (
@@ -19,7 +20,7 @@ const General = () => {
             <div className="flex item justify-center space-x-2">
               <a
                 href={`mailto:${generalInfo?.secondary?.email?.title}`}
-                className="w-6 h-6"
+                className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${eLogo})`,
                   backgroundSize: 'cover',
@@ -27,9 +28,17 @@ const General = () => {
                 }}></a>
               <a
                 href={`https://wa.me/${generalInfo?.secondary?.phone?.title.replace(/\D/g, '')}`}
-                className="w-6 h-6"
+                className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${wpLogo})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}></a>
+              <a
+                href="https://t.me/@rqi"
+                className="w-7 h-7"
+                style={{
+                  backgroundImage: `url(${telegramLogo})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}></a>
