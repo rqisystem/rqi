@@ -5,7 +5,7 @@ const Skills = () => {
     <div
       className="flex flex-col p-4 rounded-md"
       style={{ background: 'linear-gradient(135deg, #1b262a, #ed8761)' }}>
-      <span className="text-white uppercase font-bold tracking-wider mb-2">Skills</span>
+      <span className="text-white uppercase font-bold tracking-wider mb-2">Bacarıqlar</span>
       {Object.keys(skills).map((category) => (
         <div key={category} className="mb-4">
           <span className="text-white font-bold">

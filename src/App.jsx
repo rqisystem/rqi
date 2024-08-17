@@ -8,17 +8,17 @@ import SocialMedia from './components/SocialMedia';
 const App = () => {
   return (
     <div className="bg-gray-100 w-full min-h-[100vh]">
-      <div className="container mx-auto py-8">
-        <div className="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
-          <General />
-          <div className="col-span-4 sm:col-span-9">
-            <div className="bg-white shadow rounded-lg p-6">
-              <Educations />
-              <Experiences />
-              <Certificates />
-              <Skills />
-              <SocialMedia />
-            </div>
+      <div className="px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-4">
+          <div className="col-span-1 md:col-span-5 lg:col-span-3">
+            <General />
+          </div>
+          <div className="col-span-1 md:col-span-7 lg:col-span-9 bg-white shadow p-4 rounded-md">
+            <Educations />
+            <Experiences />
+            <Certificates />
+            <Skills />
+            <SocialMedia />
           </div>
         </div>
       </div>

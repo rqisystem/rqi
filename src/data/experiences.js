@@ -52,4 +52,21 @@ const experiences = [
   },
 ];
 
-export default experiences;
+const calculateSummary = () => {
+  const totalExperience = experiences.reduce((acc, exp) => {
+    const startDate = new Date(exp.startDate);
+    const endDate = exp.endDate === 'Davam edir' ? new Date() : new Date(exp.endDate);
+    const diffTime = Math.abs(endDate - startDate);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return acc + diffDays;
+  }, 0);
+
+  const years = Math.floor(totalExperience / 365);
+  const remainingDaysAfterYears = totalExperience % 365;
+  const months = Math.floor(remainingDaysAfterYears / 30);
+  const days = remainingDaysAfterYears % 30;
+
+  return `${years} il ${months} ay ${days} gün`;
+};
+
+export { experiences, calculateSummary };
