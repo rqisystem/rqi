@@ -1,4 +1,4 @@
-import fbLogo from '../assets/fb.svg';
+import fbLogo from '../assets/fb.png';
 import linkedinLogo from '../assets/linkedin.webp';
 import githubLogo from '../assets/github.png';
 

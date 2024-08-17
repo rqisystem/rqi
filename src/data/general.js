@@ -21,7 +21,7 @@ const generalInfo = {
       icon: IoLogoWhatsapp,
     },
     telegram: {
-      title: 'rustam',
+      title: 'rqi55',
       icon: SiTelegram,
     },
   },
