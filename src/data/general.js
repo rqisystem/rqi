@@ -3,11 +3,12 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   // FaBirthdayCake,
-  // IoLogoWhatsapp,
-  // SiTelegram,
   FaUserShield,
   FaCar,
 } from 'react-icons/fa';
+import { SiTelegram } from 'react-icons/si';
+import { IoLogoWhatsapp } from 'react-icons/io';
+
 const generalInfo = {
   main: { name: 'Rüstəmli Qüdrət İbrahim', position: 'Mühasib' },
 
@@ -20,14 +21,14 @@ const generalInfo = {
       title: '+994-55-522-22-31',
       icon: FaPhone,
     },
-    // whatsApp: {
-    //   title: '+994-55-522-22-31',
-    //   icon: IoLogoWhatsapp,
-    // },
-    // telegram: {
-    //   title: '@rqi',
-    //   icon: SiTelegram,
-    // },
+    whatsApp: {
+      title: '+994-55-522-22-31',
+      icon: IoLogoWhatsapp,
+    },
+    telegram: {
+      title: '@rqi',
+      icon: SiTelegram,
+    },
     email: {
       title: 'qudret.rustem@mail.ru',
       icon: FaEnvelope,
