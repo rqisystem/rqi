@@ -1,4 +1,5 @@
 import generalInfo from '../data/general';
+import socialMedias from '../data/socialMedias';
 import wpLogo from '../assets/wp-logo.png';
 import eLogo from '../assets/email-logo.png';
 import telegramLogo from '../assets/telegram-logo.webp';
@@ -45,6 +46,22 @@ const General = () => {
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}></a>
+
+              {socialMedias?.map((social, index) => (
+                <a
+                  key={index}
+                  href={social?.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    backgroundImage: `url(${social.icon})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                  className="w-7 h-7">
+                  {/* <span>{social.name}</span> */}
+                </a>
+              ))}
             </div>
           </div>
         </div>

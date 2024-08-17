@@ -3,7 +3,6 @@ import Educations from './components/Educations';
 import Experiences from './components/Experiences';
 import General from './components/General';
 import Skills from './components/Skills';
-import SocialMedia from './components/SocialMedia';
 
 const App = () => {
   return (
@@ -18,7 +17,6 @@ const App = () => {
             <Experiences />
             <Certificates />
             <Skills />
-            <SocialMedia />
           </div>
         </div>
       </div>
