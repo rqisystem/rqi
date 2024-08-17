@@ -36,10 +36,7 @@ const General = () => {
                   backgroundPosition: 'center',
                 }}></a>
               <a
-                href={`tg://resolve?domain=${generalInfo?.contacts?.telegram?.title.replace(
-                  '@',
-                  '',
-                )}`}
+                href={`tg://resolve?domain=${generalInfo?.contacts?.telegram?.title}`}
                 className="w-7 h-7"
                 style={{
                   backgroundImage: `url(${telegramLogo})`,
