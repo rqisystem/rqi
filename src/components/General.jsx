@@ -26,7 +26,7 @@ const General = () => {
                   backgroundPosition: 'center',
                 }}></a>
               <a
-                href={`https://wa.me/${generalInfo?.secondary?.phone?.title}`}
+                href={`https://wa.me/${generalInfo?.secondary?.phone?.title.replace(/\D/g, '')}`}
                 className="w-6 h-6"
                 style={{
                   backgroundImage: `url(${wpLogo})`,
