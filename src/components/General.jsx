@@ -1,4 +1,6 @@
 import generalInfo from '../data/general';
+import wpLogo from '../assets/wp-logo.png';
+import eLogo from '../assets/email-logo.png';
 
 const General = () => {
   return (
@@ -12,12 +14,26 @@ const General = () => {
           />
           <h1 className="text-xl font-bold">{generalInfo?.main?.name}</h1>
           <p className="text-gray-700">{generalInfo?.main?.position}</p>
-          <div className="mt-6 flex flex-wrap gap-4 justify-center">
-            <a
-              href={`mailto:${generalInfo?.secondary?.email?.title}`}
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-              Əlaqə
-            </a>
+          <div className="mt-6 flex flex-col flex-wrap gap-2 justify-center">
+            <h5 className="text-md font-bold text-center">Əlaqə</h5>
+            <div className="flex item justify-center space-x-2">
+              <a
+                href={`mailto:${generalInfo?.secondary?.email?.title}`}
+                className="w-6 h-6"
+                style={{
+                  backgroundImage: `url(${eLogo})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}></a>
+              <a
+                href={`https://wa.me/${generalInfo?.secondary?.phone?.title}`}
+                className="w-6 h-6"
+                style={{
+                  backgroundImage: `url(${wpLogo})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}></a>
+            </div>
           </div>
         </div>
         <hr className="my-6 border-t border-gray-300" />

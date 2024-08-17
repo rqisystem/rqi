@@ -1,5 +1,5 @@
 import {
-  // FaPhone,
+  FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
   // FaBirthdayCake,
@@ -14,10 +14,10 @@ const generalInfo = {
     //   title: '18.12.1990',
     //   icon: FaBirthdayCake,
     // },
-    // phone: {
-    //   title: '+994-55-522-22-31',
-    //   icon: FaPhone,
-    // },
+    phone: {
+      title: '+994-55-522-22-31',
+      icon: FaPhone,
+    },
     email: {
       title: 'qudret.rustem@mail.ru',
       icon: FaEnvelope,
