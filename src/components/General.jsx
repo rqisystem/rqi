@@ -1,15 +1,16 @@
-import generalInfo from '../data/general';
-import contacts from '../data/contacts';
+import contacts from "../data/contacts";
+import generalInfo from "../data/general";
+
 
 const General = () => {
   return (
     <div className="col-span-4 sm:col-span-3">
-      <div className="bg-white shadow rounded-lg p-6">
+      <div className="p-6 bg-white rounded-lg shadow">
         <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center justify-center shadow-soft-lg p-3 rounded-md w-full">
+          <div className="flex flex-col items-center justify-center w-full p-3 rounded-md shadow-soft-lg">
             <img
               src="/logo.png"
-              className="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
+              className="w-32 h-32 mb-4 bg-gray-300 rounded-full shrink-0"
               alt="Profile"
             />
             <div className="flex flex-col items-center justify-center">
@@ -17,8 +18,8 @@ const General = () => {
               <p className="text-gray-700">{generalInfo?.main?.position}</p>
             </div>
           </div>
-          <div className="mt-6 flex flex-col flex-wrap justify-center w-full my-4">
-            <div className="flex item justify-center space-x-3 shadow-soft-lg p-3 rounded-md">
+          <div className="flex flex-col flex-wrap justify-center w-full my-4 mt-6">
+            <div className="flex justify-center p-3 space-x-3 rounded-md item shadow-soft-lg">
               {contacts?.map((social, index) => {
                 if (social?.visible) {
                   return (
@@ -32,15 +33,15 @@ const General = () => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                       }}
-                      className="w-7 h-7 transition-transform transform hover:-translate-y-2"></a>
+                      className="transition-transform transform w-7 h-7 hover:-translate-y-2"></a>
                   );
                 }
               })}
             </div>
           </div>
         </div>
-        <div className="flex flex-col shadow-soft-lg p-3 rounded-md">
-          <span className="text-gray-700 uppercase font-bold tracking-wider mb-2">
+        <div className="flex flex-col p-3 rounded-md shadow-soft-lg">
+          <span className="mb-2 font-bold tracking-wider text-gray-700 uppercase">
             Ümumi Məlumatlar
           </span>
           <ul className="list-none">
