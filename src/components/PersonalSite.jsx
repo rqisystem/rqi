@@ -216,10 +216,7 @@ export default function PersonalSite() {
         </main>
 
         <footer className="p-6 text-center bg-black/80">
-          <p className="text-lg">
-            &copy; {new Date().getFullYear()} {data?.generalInfo?.main?.name}. Bütün hüquqlar
-            qorunur.
-          </p>
+          <p className="text-lg">&copy; {new Date().getFullYear()} RQI. Bütün hüquqlar qorunur.</p>
         </footer>
       </motion.div>
     </div>
