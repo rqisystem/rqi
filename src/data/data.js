@@ -46,11 +46,11 @@ export default {
         icon: FaMapMarkerAlt,
       },
       militaryService: {
-        title: 'Tamamlandı',
+        title: 'Hərbi vəzifəsi: h/M',
         icon: FaPersonMilitaryRifle,
       },
       driversLicense: {
-        title: 'BC',
+        title: 'B1,B,C1,C',
         icon: FaCar,
       },
     },
