@@ -46,7 +46,7 @@ export default {
         icon: FaMapMarkerAlt,
       },
       militaryService: {
-        title: 'Hərbi vəzifəsi: h/M',
+        title: 'Hərbi mükəlləfiyyətli: h/M',
         icon: FaPersonMilitaryRifle,
       },
       driversLicense: {
