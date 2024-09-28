@@ -1,9 +1,10 @@
 import {
   FaMapMarkerAlt,
   // FaBirthdayCake,
-  FaUserShield,
   FaCar,
 } from 'react-icons/fa';
+import { FaPersonMilitaryRifle } from 'react-icons/fa6';
+
 import fbLogo from '../assets/fb.png';
 import linkedinLogo from '../assets/linkedin.webp';
 import githubLogo from '../assets/github.png';
@@ -46,7 +47,7 @@ export default {
       },
       militaryService: {
         title: 'Tamamlandı',
-        icon: FaUserShield,
+        icon: FaPersonMilitaryRifle,
       },
       driversLicense: {
         title: 'BC',
